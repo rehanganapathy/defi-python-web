@@ -1,0 +1,10 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "/Users/rehanganapathy/Desktop/solidity_defi/defi/contracts/@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract RUSD is ERC20 {
+    constructor() ERC20("RUSD", "RUSD") {
+        _mint(msg.sender, 1000000000000000000000000);
+    }
+}
